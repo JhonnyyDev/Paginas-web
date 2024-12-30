@@ -1,0 +1,20 @@
+#barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Modos {
+    padding: 10px 14px;  
+    font-size: 14px;     
+    max-width: 120px;    
+    max-height: 50px;
+}
+
+#Hamburguesa {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.lista {
+    display: none;
+}

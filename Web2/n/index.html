@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción breve de tu página">
+    <title>Título de la Página</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS / rel="stylesheet" (es para que no haya problemas de compatibilidad con ciertos navegadores, indica que tipo de archivo se enlaza a este html) -->
+</head>
+<body>
+    <div class="queseveabien">
+    <header>
+    <section id="inicio">
+    <center><h1>Como subir una WEB a un Hosting y ponerle un nuevo Dominio</h1></text-center>
+    </section></center>
+    <center><img src="img\taras-shypka-iFSvn82XfGo-unsplash.jpg" alt="Imagen de Internet" class="img1"></center>
+    <p>En esta pagina te enseño todo lo que necesitas saber, para dejar tu web en internet, luego de diseñarla de manera local,
+           esto lo podes hacer totalmente de manera gratuita, no necesitas pagar nada, pero si queres algo profesional a futuro, es recomendable
+           invertir en un buen hosting y dominio - Escrito por <a href="https://www.twitch.tv/jhonnyydev" target="_blank" title="Visita Mi Twitch">Jhonnyy Dev</a>
+    </p>
+    </div>
+    <h2>Pasos a realizar para lograrlo</h2>
+    <nav>
+    <ol>
+    <li><a href="#Paso1">Buscar un Hosting</a></li>
+    <li><a href="#Paso2">Conseguir un dominio</a></li>
+    <li><a href="#Paso3">Definir que tipo de web se va a subir</a></li>
+    <li><a href="#Paso4">Configurar base de datos en el hosting</a></li>
+    <li><a href="#Paso5">Subir web al hosting</a></li>
+    <li><a href="#Paso6">Configurar SSL</a></li>
+    </ol>
+    </nav>
+    <h2>Informacion extra</h2>
+    <nav>
+    <ul>
+    <li><a href="#Opcionales">Instalaciones y configuraciones opcionales</a></li>
+    <li><a href="#errores">Errores que se me presentaron y como solucionarlos</a></li>
+    <li><a href="#webs">Webs utiles</a></li>
+    </ul>
+    </nav>
+    </header>
+    
+    <main>
+        <div class="queseveabien2"></div>
+        <section id="Paso1">
+        <h3>1 - Buscar un Hosting</h3>
+        <p>Hosting podemos encontrar de manera gratuita y paga, la ventaja de pagar un hosting, es que dara menos complicaciones para dejar nuestra
+            web funcional, sera en su mayoria mas accesible configurar todo y dispondra de una mayor velocidad de carga nuestro sitio web y seguramente
+            incluyendo certificado SSL completo y dominio, pero en el caso que no quisieramos pagar un hosting, tenemos alternativas gratuitas, como lo son
+            por ejemplo https://www.infinityfree.com/ (recomendado) y https://googiehost.com/es/ entre otros miles que hay.</p>
+        </section>
+
+        <section id="Paso2">
+        <h3>2 - Conseguir un dominio</h3>
+        <p>El dominio, es parte de la URL del sitio, el nombre y el final despues de poner HTTP://<b>"ESTO.COM"</b>, si queremos uno mas personalizado
+        vamos a tener que pagarlo, generalmente tienen duracion de 1 año aproximadamente, tienen mas valor si terminan en .com .net o son palabras que
+        son muy buscadas. Generalmente al contratar un hosting pago, viene en la mayoria de los casos, 1 dominio gratis incluido (en realidad no es gratis, ya estas pagando
+        el hosting, y seguro que te estan cobrando de más porque te dan el dominio), pero sino queres pagar nada, tambien podemos optar por tener alguno gratuito, que vienen incluido
+        en los hosting gratuitos, que anteriormente te mencione, obviamente van a ser dominios largos y poco amigables para escribirlos, pero lo importante es que 
+        son gratis y no vas a tener que pagar nada.</p>
+        </section>
+
+        <section id="Paso3">
+        <h3>3 - Definir que tipo de web se va a subir</h3>
+        <p>Podemos <b>subir una web hecha con Codigo</b>, la cual sera en parte mas sencilla de subir, o por otro lado podemos <b>subir una web realizada con un CMS</b> 
+        (Como por ejemplo Wordpress), y subir una web de este estilo, es un poco mas complicado, ya que 
+        suelen ser un conjunto mas amplio de archivos, ademas de que hay diversas formas de realizarlo.</p>
+        </section>
+
+        <section id="Paso4">
+        <h3>4 - Configurar base de datos en el hosting</h3>
+        <p>Esto se debe realizar dependiendo del sitio web que vayamos a subir al hosting, si es una web "Estatica" <b>hecha con codigo</b>, en donde
+        no es necesario almacenar datos de usuario y contraseña por ejemplo, no hace falta configurar nada de esto. en cambio si necesitamos realizar lo anterior, si se debe hacer. 
+        Y en el caso que se suba una web <b>hecha con un CMS (como wordpress)</b>, tambien debemos configurar una base de datos. <br>
+        Esto se hace generalmente en la opcion "PhPMyAdmin / base de datos / database, etc" que encontraremos en la web de nuestro hosting. Dentro de la misma
+        buscaremos la de "crear una base de datos" a la misma le asignamos un "nombre, usuario y contraseña", que debemos recordar para acceder a la misma y configurarla en un futuro.</p>
+        <p>Dependiendo de lo que vayamos a subir al hosting, esto se realiza antes del paso 5 o en algunos casos es indistinto.<br>
+        <b>Se realiza antes si:</b> Creamos una web con CMS y usamos un plugin como por ejemplo duplicator <br>
+        <b>Es indistinto si:</b> Subimos una web con CMS y pasamos los archivos mediante Fillezila <br>
+        <b>Es indistinto si:</b> Subimos una web hecha con codigo.</p>
+        <p>En el caso de que sea <b>antes</b> la creacion, para el caso de usar duplicator, solo lo unico que tenemos que hacer es crear la base de datos que se explico anteriormente.
+        y en el caso que sea <b>indistinto</b>, se debe realizar una copia de la base de datos en un archivo SQL, e importarla dentro de "PhPMyAdmin o la base de datos que tenga nuestro hosting"
+        una vez que se haya subido la base de datos, tenemos que ir y cambiar la URL que teniamos en local, por la nueva URL que tengamos en el hosting. en el caso de usar CMS de Wordpress
+        la tabla se encuentra en WP_options.</p>
+        </section>
+
+        <section id="Paso5">
+        <h3>5 - Subir web al hosting</h3>
+        <p>En este punto, hay que tener en cuenta los 2 tipos de páginas que vamos a subir, ya que en cada caso el proceso es distinto</p>
+        <ul>
+        <li>Con codigo (html,css + JavaScript, PhP, Typescript, etc)</li>
+        <li>Con CMS (Wordpress, Shopify, etc)</li>
+        </ul>
+        <h4>Con codigo (html,css + JavaScript, PhP, Typescript, etc)</h4>
+        <p>Si decidimos subir una web de este formato, sera tan simple como subir archivos a una nube, es cuestion de buscar la carpeta "File Manager" o similar de nuestro hosting,
+        y ubicar los archivos html,css,imagenes, etc. En donde nos indique el hosting.</p>
+        <h4>Con CMS (Wordpress, Shopify, etc)</h4>
+        <p>Si nuestra web es de este estilo, migrarla a un hosting es un poco mas complejo, tenemos diversos metodos <br>
+        <b>Metodo 1:</b> Habra que descargarse un programa llamado File Zilla (Cliente), el cual basicamente se conecta a la nube del hosting, y nos permite transferir una gran
+        cantidad de archivos, para eso el programa nos va a solicitar 4 datos "host" "usuario" "contraseña" "puerto" y todo esto lo vamos a encontrar, en el mismo hosting en algun
+        apartado que diga FTP, el programa es bastante sencillo, nos muestra solamente nuestros archivos y carpetas, como lo veriamos en cualquier ventana. Una vez que estemos conectados, es 
+        arrastrar archivos de un lado a otro, de nuestra PC al Hosting. Hay que tener en cuenta donde pasar los archivos, generalmente el hosting nos indica donde debemos hacerlo, ya sea entrando a la pagina web,
+        por primera vez, sin configurar nada, desde 0 ni bien nos da el dominio o en algunos casos revisando el File Manager o "nube similar" leyendo lo que nos pueda indicar. Despues tendremos que tener la base de datos creada, 
+        esto lo hacemos en donde tengamos el apartado "databases, mysql, base de datos, etc. en nuestro hosting, una vez creada ingresamos al PhPMyAdmino el que disponga el hosting, y buscamos la opcion de importar, ahi debemos
+        subir nuestro archivo SQL de nuestra base de datos previamente exportado de nuestro sitio web creado en wordpress en local, y finalizando con la base de datos, debemos ubicar el archivo wp_config.php (que estara con los archivos que hemos subido) y editarlo con los datos de nuestra
+        nueva base de datos (nombre de base de datos, usuario, contraseña, etc) sino hacemos esto, no vamos a poder cargar nuestro sitio. Luego de realizar lo anterior, nuestro sitio Web, ya deberia
+        por lo menos ingresarse. Pero no todo termina ahi, porque es muy probable que imagenes no esten mostrandoce o algun que otro contenido faltante, y esto se arregla instalando un plugin llamado "Better Search Replace" el cual te pide que pongas, el dominio
+        que usabas en local y el nuevo que conseguiste en el hosting.<br>
+        <b>Metodo 2:</b> En el caso de Wordpress, se puede descargar un plugin llamado “Duplicator”, el cual debemos usarlo primero en Local, para hacer un respaldo de nuestro sitio.
+        Este Plugin va a crear 2 archivos, 1 es la web y el otro es un instalador de la misma. Estos 2 archivos debemos subirlos a la nube de nuestro hosting. Luego para empezar a correr el instalador,
+        se debe ingresar al mismo mediante una URL que tenga la ubicacion exacta del mismo, por ejemplo "www.tu-sitio.com/installer.php", previamente recordar que debe estar creada la base de datos en el hosting,
+        ya que al empezar el instalador nos solicita, nombre, usuario y contraseña de la misma. Luego que termina, el sitio web, ya estaría visible.</p>
+        </section>
+
+        <section id="Paso6">
+        <h3>6 - Configurar SSL</h3>
+        <p>Con este último paso podemos dejar nuestra web funcional al 100%, si bien llegando al paso 5, ya es visible. Eso no quiere decir que esté funcionando bien. Ya que debemos instalar algo que se llama certificado SSL,
+        que es básicamente demostrar que nuestra web es segura, y el inicio de la URL cambia de “http” a “https”</p>
+        <p>Para instalar el SSL va a ser más fácil y “completo” si nuestro hosting es pagado, ya que seguramente tengamos una opción dentro de nuestro hosting que lo activa de manera sencilla, sin muchas complicaciones.
+        Y en el caso que nuestro hosting sea gratuito, tendrá un poco más de complicaciones instalarlo y no sea “completo“, pero dentro de todo funcional casi al 100%</p>
+        <p>Ahora sin más rellenó, para instalarlo de forma gratuita, vamos a algún apartado que diga SSL en nuestro hosting. Y le damos a alguna opción que diga de solicitar SSL, puede pasar que haya milagrosamente algo que lo
+        haga automático y sino, buscar la opción de solicitar un CSR, nos dará un código que debemos introducir en algún servicio de SSL externo gratuito, como por ejemplo ZeroSSL, al poner el código de solicitud de certificado,
+        nos darán 3 archivos, que son útiles para activar el SSL en nuestro hosting. 1 la clave privada, 2 el certificado y 3 el certificado bundle o cadena, este último, no lo vamos a poder instalar, en un hosting gratuito y eso
+        puede provocar que nuestro sitio web no funcione en todos los navegadores, aunque serían la minoría el 1% de 99% que si estarían funcionando. Estos 3 archivos contienen un código, que debemos visualizar abriéndolos como bloc
+        de notas, copiarlos y pegarlos en donde nos sea solicitado en el hosting, luego de eso. Suelen pedir que subamos un archivo en una ubicación específica, en la nube del hosting y corroborar que se puede acceder a él, mediante
+        una URL, si eso funciona en breves minutos, debería quedar instalado. Y veremos nuestra URL con https y un candado que indica que nuestro sitio es seguro.</p>
+        <p>Pero no todo termina en lo anterior, faltan algunas cosillas más, hay que cambiar en la base de datos (si es que tenemos) la URL, ya que seguramente debe figurar con HTTP y debemos cambiar a HTTPS. Y si nuestra página está
+        hecha con Wordpress, debemos ingresar al escritorio de Wordpress e ir a los ajustes y cambiar la URL si figura con HTTP a HTTPS. Y finalmente ahora si, la web estaría funcionando al 100%. <b>Felicitaciones si llegaste hasta este punto!</b></p>
+        </section>
+            
+        <section id="Opcionales">
+        <h3>Instalaciones y configuraciones opcionales</h3>
+        <ol>
+        <p><li>Uno de los programas que te recomiendo, si queres hacer sitios webs en wordpress, para aumentar tu productividad y tener funciones utiles para tus clientes,
+            es LocalWP, es un programa con una interfaz amigable, que simplifica cosas como configurar base de datos y server, te permite compartir tu sitio web con un potencial
+            cliente, sin tener que pasarle archivos (de esta forma podes evitar ser estafado), ademas de crear copias de tus sitios, para despues rehacerlos desde un punto avanzado
+            sin tener que volver a arrancar de 0, entre otras funciones mas. el programa es totalmente gratuito y lo conseguis en <a href="https://localwp.com/ ">https://localwp.com</a>
+        </li></p>
+        </ol>
+        </section>
+            
+        <section id="errores">
+        <h3>Errores que se me presentaron y cómo solucionarlos</h3>
+        
+        <p>Bueno vamos a hablar de las complicaciones que tuve al subir mi sitio web creado con Wordpress, a un
+            hosting gratuito, especificamente el InfinityFree y las soluciones que encontre para resolver estos problemas</p>
+        <ol>
+        <p><li>Si se instala un certificado SSL gratuito puede haber complicaciones con algunos navegadores, ya que no lo detectan como si fuera de confianza, eso porque 
+        lo descriminan por ser gratis, se soluciona, buscando otro y borrando el que se haya instalado, no puede haber 2 en simultaneo para la misma URL, 
+        sino el sitio web no funciona</li></p>
+        <p><li>Si el sitio no funciona, es posible que se deba cambiar datos en el archivo htaccess, dentro de la nube del hosting, "si es que existe el archivo"</li></p>
+        </ol>
+        </section>
+
+        <section id="webs">
+        <h3>Webs utiles</h3>
+        <p>Estas webs te seran utiles en algun momento, en el que estes diseñando</p>
+        <ol>
+        <p><li><a href="https://jhonnyydev.whf.bz/">https://jhonnyydev.whf.bz</a> - Guia sobre el negocio de desarrollo web (creado por el crack Jhonnyy Dev)</li></p>
+        <p><li><a href="https://www.sslshopper.com/">https://www.sslshopper.com</a> - Aca podes verificar el certificado SSL</li></p>
+        <p><li><a href="https://www.infinityfree.com">https://www.infinityfree.com</a> - Hosting y dominio gratuito</li></p>
+        <p><li><a href="https://forum.infinityfree.com/docs">https://forum.infinityfree.com/docs</a> - buenos conceptos sobre todo lo relacionado con website</li></p>
+        <p><li><a href="https://zerossl.com">https://zerossl.com</a> - Certificados SSL gratuitos x90 dias</li></p>
+        <p><li><a href="https://unsplash.com/es">https://unsplash.com/es</a> - Imagenes sin derechos de autor, que podes usar en tu sitio web</li></p>
+        <p><li><a href="https://pixabay.com/es">https://pixabay.com/es</a> - Imagenes sin derechos de autor, que podes usar en tu sitio web</li></p>
+        </ol>
+        </section>
+    </div>
+    </main>
+    <br>
+    <footer>
+        <p>© 2024 Mi Sitio Web Wachin. Todos los derechos reservados, si te sirvio mencioname by Jhonnyy Dev ;)</p>
+        <br>
+        <center><a href="#inicio"><b>Subir al comienzo</b></a></center>
+        <br>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Enlace a tu archivo JavaScript -->
+</body>
+</html>
+
+<!-- https://flexboxfroggy.com/#es despues chusmea esto -->
