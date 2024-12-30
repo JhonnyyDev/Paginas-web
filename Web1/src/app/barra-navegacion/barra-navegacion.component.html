@@ -2,8 +2,8 @@
  <div id="barraNavegacion">
   <button id="Modos" (click)="cambiomodo()">Modo Claro</button>
   <div id="botonLista">
-    <button id="Hamburguesa">&#9776;</button>
-    <ul>
+    <button id="Hamburguesa" (click)="abrirMenu()">&#9776;</button>
+    <ul *ngIf="menuOpen">
      <li class="lista">Sobre Mi</li>
      <li class="lista">Tecnologias</li>
      <li class="lista">Proyectos</li>

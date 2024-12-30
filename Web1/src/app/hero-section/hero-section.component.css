@@ -1,0 +1,25 @@
+.contenedor {
+    text-align:left;     /*alineacion de contenedor */
+    margin-top: 15%;     /* Espacio superior responsive */
+    border-style: solid;
+    padding: 10%;
+   }
+   
+   #fotoPerfil {
+    width: 50%;         /* Ancho responsive */
+    height: auto;       /* Altura proporcional */
+    margin-left: 3%;    /* Mueve la imagen hacia la derecha */
+   }
+
+   #numeros {
+    position: absolute;
+    animation: movimiento 3s linear infinite;
+  }
+  
+  @keyframes movimiento {
+    0% { transform: translate(0%, 0%) rotate(0deg); } 
+    25% { transform: translate(250%, -100%) rotate(-20deg); } 
+    50% { transform: translate(300%, -150%) rotate(-40deg); }
+    75% { transform: translate(300%, -400%) rotate(-70deg); }
+    /* 100% { transform: translate(0%, 0%)  } */
+  }
