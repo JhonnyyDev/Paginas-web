@@ -1,42 +1,54 @@
-.contenedor {
-  text-align: left; /* Alineación del contenedor */
-  margin-top: 5%; /* Espacio superior responsive */
-  padding: 10%;
+.contenedorgeneral {
+  display: flex;
+  flex-wrap: nowrap;
+  border-style: solid;
+  width: auto;
+  height: 22vh;
+  padding: 0;
+  margin: 0;
+  margin-top: 20%;
+  
 }
 
+/* contenedor imagenes*/
 .images {
   position: relative;
-  width: 270px; /* Define un tamaño fijo para el contenedor */
-  height: 270px; /* Asegura que tenga la misma altura */
-  margin: 1 auto; /* Centra el contenedor si es necesario */
+  width: 50%; 
+  height: 21vh; 
 }
 
-/* contenedor */
+/* contenedor texto */
+.texto {
+  position: relative;
+  width: 50%; 
+  height: 21vh; 
+  border-style: solid;
+  text-align: center;
+}
+
 .images img {
-  position: absolute; /* Superpone todas las imágenes */
-  top: 0; /* Alinea al inicio del contenedor */
-  left: 0; /* Alinea al inicio del contenedor */
-  width: 50%; /* Ajusta al ancho del contenedor */
-  height: 65%; /* Ajusta a la altura del contenedor */
+
+  position: absolute; /* Superpone todas las imágenes */ 
+  top: 7%; /*Alinea al inicio del contenedor */
+  left: 15%; /*Alinea al inicio del contenedor */
+  width: 70%; /*Ajusta al ancho del contenedor */
+  height: 85%; /*Ajusta a la altura del contenedor */
+  
 }
 
 /* foto */
-#fotoPerfil {
-  position: absolute;
-  z-index: 2; /* Eleva esta imagen por encima de otras */
-  left: 2%;
-  top: 1%;
+#fotoPerfil { 
+position: absolute; 
+z-index: 2; /*Eleva esta imagen por encima de otras */
+left: 20%; 
+top: 13%; 
+  } 
 
-}
-
-#circulo {
-  position: relative;
-  left: -18%; /* Mueve la imagen 30px hacia la derecha */
-  top: -7%;
-  width: 230px;
-  height: auto;
-  
-}
+#circulo { 
+position: static; 
+width: 105%;
+height: auto;
+  } 
 
 .images img:nth-child(2) {
   animation-name: spin1;
