@@ -1,7 +1,8 @@
+@media (max-width: 600px) {
 .contenedorgeneral {
   display: flex;
   flex-wrap: nowrap;
-  border-style: solid;
+  /* border-style: solid; */
   width: auto;
   height: 22vh;
   padding: 0;
@@ -19,11 +20,14 @@
 
 /* contenedor texto */
 .texto {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 50%; 
   height: 21vh; 
-  border-style: solid;
+  /* border-style: solid;  */
   text-align: center;
+  align-items: center;
 }
 
 .images img {
@@ -68,13 +72,24 @@ height: auto;
 }
 
 .typing-effect {
+  position:relative;
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
   overflow: hidden; /* Oculta el texto que sale del área visible */
   border-right: 3px solid black; /* Simula un cursor */
-  width: 15ch; /* Controla la longitud del texto visible */
+  width: 17ch; /* Controla la longitud del texto visible */
   animation: typing 2s steps(10) infinite, blink 0.6s step-end infinite;
+  margin-bottom: 1%;
+  color: rgb(121, 0, 121);
+  text-shadow: 2px 2px 4px rgba(0, 255, 42, 0.5);
+}
+
+.titulo {
+  color: rgb(70, 136, 4);
+  text-shadow: 2px 2px 4px rgba(230, 1, 210, 0.5);
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Efecto de escribir */
@@ -83,7 +98,133 @@ height: auto;
     width: 0; /* Empieza desde 0 caracteres visibles */
   }
   to {
-    width: 12ch; /* Muestra el número de caracteres deseado */
+    width: 17ch; /* Muestra el número de caracteres deseado */
+  }
+}
+
+/* Efecto de parpadeo del cursor */
+@keyframes blink {
+  from, to {
+    border-color: transparent; /* Cursor invisible */
+  }
+  50% {
+    border-color: black; /* Cursor visible */
+  }
+}
+
+}
+
+/* modo ordenador */
+
+.contenedorgeneral {
+  display: flex;
+  flex-wrap: nowrap;
+  /* border-style: solid;  */
+  width: 100vw; /* 80% del ancho de la ventana gráfica */ 
+  height: 79vh;
+  padding: 0;
+  margin: 0;
+  margin-top: 2%;
+  overflow: hidden; /*evita desbordamiento*/
+}
+
+/* contenedor imagenes*/
+.images {
+  position: relative;
+  width: 40%; 
+  height: 100%; 
+  /* border-style: solid; */
+}
+
+.images img {
+
+  position: absolute; /* Superpone todas las imágenes */ 
+  top: 7%; /*Alinea al inicio del contenedor */
+  left: 15%; /*Alinea al inicio del contenedor */
+  width: 70%; /*Ajusta al ancho del contenedor */
+  height: 85%; /*Ajusta a la altura del contenedor */
+  
+}
+
+/* foto */
+#fotoPerfil { 
+position: absolute; 
+z-index: 2; /*Eleva esta imagen por encima de otras */
+left: 28%; 
+top: 10%; 
+width: 40%;
+height: 80%;
+  } 
+
+#circulo { 
+position: static; 
+width: 90%;
+height: auto;
+  } 
+
+.images img:nth-child(2) {
+  animation-name: spin1;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 1; 
+}
+
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* contenedor texto */
+.texto {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%; 
+  height: 100%; 
+  /* border-style: solid;  */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.typing-effect {
+  position:relative;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  overflow: hidden; /* Oculta el texto que sale del área visible */
+  width: 20ch; /* Controla la longitud del texto visible */
+  animation: typing 2s steps(15) infinite, blink 0.6s step-end infinite;
+  color: rgb(190, 4, 190);
+  text-shadow: 2px 2px 4px rgba(0, 255, 42, 0.5);
+  margin-bottom: -12%;
+  left: -12%;
+  width: 20%;
+}
+
+.titulo {
+  position: relative;
+  color: rgb(70, 136, 4);
+  text-shadow: 2px 2px 4px rgba(230, 1, 210, 0.5);
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15%;
+  left: -20%;
+}
+
+/* Efecto de escribir */
+@keyframes typing {
+  from {
+    width: 0; /* Empieza desde 0 caracteres visibles */
+  }
+  to {
+    width: 20ch; /* Muestra el número de caracteres deseado */
   }
 }
 
