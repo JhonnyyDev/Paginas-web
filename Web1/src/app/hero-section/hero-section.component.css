@@ -55,7 +55,7 @@ height: auto;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  z-index: 1; /* Asegúrate de que esta esté detrás de #fotoPerfil */
+  z-index: 1; 
 }
 
 @keyframes spin1 {
@@ -64,5 +64,35 @@ height: auto;
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.typing-effect {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  overflow: hidden; /* Oculta el texto que sale del área visible */
+  border-right: 3px solid black; /* Simula un cursor */
+  width: 15ch; /* Controla la longitud del texto visible */
+  animation: typing 2s steps(10) infinite, blink 0.6s step-end infinite;
+}
+
+/* Efecto de escribir */
+@keyframes typing {
+  from {
+    width: 0; /* Empieza desde 0 caracteres visibles */
+  }
+  to {
+    width: 12ch; /* Muestra el número de caracteres deseado */
+  }
+}
+
+/* Efecto de parpadeo del cursor */
+@keyframes blink {
+  from, to {
+    border-color: transparent; /* Cursor invisible */
+  }
+  50% {
+    border-color: black; /* Cursor visible */
   }
 }
