@@ -1,53 +1,56 @@
 .contenedor {
-    text-align:left;     /*alineacion de contenedor */
-    margin-top: 15%;     /* Espacio superior responsive */
-    
-    padding: 10%;
-   }
-   
-  .images {
-    position: relative;
-    width: 300px;
-  }
-  
-  .images img {
-    width: 100%;
-    height: auto;
-  }
+  text-align: left; /* Alineación del contenedor */
+  margin-top: 5%; /* Espacio superior responsive */
+  padding: 10%;
+}
 
-  #fotoPerfil {
-    width: 40%;         /* Ancho responsive */
-    height: auto;       /* Altura proporcional */
-    margin-left: 10%;    /* Mueve la imagen hacia la derecha */
-   }
-  
-  .images img:nth-child(1) {
-    position: absolute;
-  }
-  
-  .images img:nth-child(2) {
-    position: absolute;
-    animation-name: spin1;
-    animation-duration: 50s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    
-  }
- 
+.images {
+  position: relative;
+  width: 270px; /* Define un tamaño fijo para el contenedor */
+  height: 270px; /* Asegura que tenga la misma altura */
+  margin: 1 auto; /* Centra el contenedor si es necesario */
+}
 
-  @keyframes spin1 {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+/* contenedor */
+.images img {
+  position: absolute; /* Superpone todas las imágenes */
+  top: 0; /* Alinea al inicio del contenedor */
+  left: 0; /* Alinea al inicio del contenedor */
+  width: 50%; /* Ajusta al ancho del contenedor */
+  height: 65%; /* Ajusta a la altura del contenedor */
+}
+
+/* foto */
+#fotoPerfil {
+  position: absolute;
+  z-index: 2; /* Eleva esta imagen por encima de otras */
+  left: 2%;
+  top: 1%;
+
+}
+
+#circulo {
+  position: relative;
+  left: -18%; /* Mueve la imagen 30px hacia la derecha */
+  top: -7%;
+  width: 230px;
+  height: auto;
+  
+}
+
+.images img:nth-child(2) {
+  animation-name: spin1;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 1; /* Asegúrate de que esta esté detrás de #fotoPerfil */
+}
+
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
   }
-  @keyframes spin2 {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
