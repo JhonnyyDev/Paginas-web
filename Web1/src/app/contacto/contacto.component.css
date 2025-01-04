@@ -1,0 +1,45 @@
+form {
+    display: block;
+    width: 50%; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 5%; /* Espaciado interno */
+    border: 1px solid #ffffff; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #143d26; /* Color de fondo */
+}
+
+label {
+    display: block; /* Hacer que el label sea un bloque */ 
+    margin-bottom: 2%; /* Espaciado entre el label y el input */
+}
+
+.contenedor-inputs-a {
+    display: flex; /* Usar flex */
+    width: 100%;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Colocar label arriba y input abajo */
+    width: 100%;
+}
+
+.inputs-a {
+    width: 100%;
+    border: 1px solid;
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box; /* Asegurarse de que el padding y el borde se incluyan en el ancho total */
+}
+
+.contenedor-input-b {
+    margin-top: 10px; /* Espacio superior para separar del grupo anterior */
+}
+
+#mensaje {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir borde y relleno en el ancho y alto */
+}
