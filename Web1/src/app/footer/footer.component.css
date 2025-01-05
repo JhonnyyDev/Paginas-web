@@ -1,0 +1,50 @@
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;  /* Agrega padding interno */
+    margin: 0;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;     /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 1200px; /* O el ancho máximo que desees */
+    margin: 0 auto;  /* Centra el contenedor */
+    gap: 20px;       /* Espacio entre elementos flex */
+}
+
+/* Para los divs dentro del contenedor1 */
+.contenedor1 > div {
+    flex: 1;         /* Permite que los divs crezcan equitativamente */
+    min-width: 200px; /* Ancho mínimo antes de hacer wrap */
+    padding: 10px;    /* Espaciado interno */
+}
+
+/* Para las listas */
+.contenedor1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista {
+    margin-bottom: 10px;
+}
+
+/* Para el div del copyright */
+footer > div:last-child {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.contenedor2 {
+    width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
