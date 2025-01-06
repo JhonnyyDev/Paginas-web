@@ -62,3 +62,21 @@ footer > div:last-child {
     width: 100px;
     margin-right: 5%;
 }
+
+@media (max-width: 600px) {
+ #texto {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 3%;
+    text-align: justify;
+    line-height: 1.5; /* Espaciado entre líneas cómodo */
+    font-size: 16px;
+ }
+
+ #texto p {
+    margin: 0%;
+ }
+
+
+
+}
