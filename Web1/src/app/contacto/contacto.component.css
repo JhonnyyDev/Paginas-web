@@ -66,6 +66,18 @@ label {
     outline: none;
 }
 
+#botondiv {
+    display: flex;
+    margin-top: 5%;
+    justify-content: flex-end;
+}
+
+#boton {
+    
+    padding: 10px 20px; /* arriba/abajo izquierda/derecha */
+    
+}
+
 @media (max-width: 600px) {
 
  form {
@@ -87,4 +99,7 @@ label {
     gap: 6%; /* Espacio entre los elementos */
 }
 
+#boton {
+    padding: 0px 0px; /* arriba/abajo izquierda/derecha */
+}
 }
