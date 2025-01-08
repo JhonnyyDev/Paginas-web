@@ -1,5 +1,4 @@
 /* modo ordenador */
-
 #barraNavegacion {
   display: flex;
   justify-content: space-between;
@@ -8,6 +7,7 @@
   margin: 0;
   padding: 0;
 }
+
 
 #Modos {
   padding: 10px 14px;

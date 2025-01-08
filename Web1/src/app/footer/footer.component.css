@@ -63,6 +63,12 @@ footer > div:last-child {
     margin-right: 5%;
 }
 
+#texto p { 
+    text-align: center;
+    
+}
+
+
 @media (max-width: 600px) {
  #texto {
     margin-left: 8%;
