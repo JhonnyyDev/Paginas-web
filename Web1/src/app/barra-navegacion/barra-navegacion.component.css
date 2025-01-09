@@ -8,6 +8,43 @@
   padding: 0;
 }
 
+.botonX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  position: relative;
+}
+
+.botonX .Linea {
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #015f1e;
+  transition: all 0.3s;
+}
+
+/* Líneas horizontales por defecto */
+.botonX .Linea:nth-child(1) {
+  transform: translateY(-5px);
+}
+
+.botonX .Linea:nth-child(2) {
+  transform: translateY(5px);
+}
+
+/* Transformaciones cuando está activo */
+.botonX.active .Linea:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.botonX.active .Linea:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
 
 #Modos {
   padding: 10px 14px;
@@ -16,16 +53,7 @@
   max-height: 50px;
 }
 
-#Hamburguesa {
-  padding: 12px;
-  font-size: 14px;
-}
-
-#botonLista {
-  position: relative;
-}
-
-#botonLista ul {
+.botonX ul {
   position: absolute;
   top: 100%;
   right: 0;
@@ -58,17 +86,12 @@
       max-width: 120px;
       max-height: 50px;
     }
-    
-    #Hamburguesa {
-      padding: 12px;
-      font-size: 14px;
-    }
-    
-    #botonLista {
+
+    .botonX {
       position: relative;
     }
     
-    #botonLista ul {
+    .botonX ul {
       position: absolute;
       top: 100%;
       right: 0;

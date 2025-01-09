@@ -1,14 +1,16 @@
 <nav>
  <div id="barraNavegacion">
   <button id="Modos" (click)="cambiomodo()">Modo Claro</button>
-  <div id="botonLista">
-    <button id="Hamburguesa" (click)="abrirMenu()">&#9776;</button>
+
+  <div class="botonX" [ngClass]="{'active': isActive}" (click)="ActivarFunciones()">
+    <span class="Linea"></span>
+    <span class="Linea"></span>
     <ul *ngIf="menuOpen">
-     <li class="lista"><a href="#SobreMi">Sobre Mi</a></li>
-     <li class="lista"><a href="#Tecnologías">Tecnologias</a></li>
-     <li class="lista"><a href="#Proyectos">Proyectos</a></li>
-     <li class="lista"><a href="#Contacto">Contacto</a></li>
-    </ul>
+      <li class="lista"><a href="#SobreMi">Sobre Mi</a></li>
+      <li class="lista"><a href="#Tecnologías">Tecnologias</a></li>
+      <li class="lista"><a href="#Proyectos">Proyectos</a></li>
+      <li class="lista"><a href="#Contacto">Contacto</a></li>
+     </ul>
   </div>
  </div>
 </nav>

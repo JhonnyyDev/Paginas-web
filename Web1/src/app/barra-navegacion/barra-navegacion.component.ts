@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { NgIf } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-barra-navegacion',
-  imports: [NgIf],
+  imports: [NgIf, CommonModule],
   templateUrl: './barra-navegacion.component.html',
   styleUrl: './barra-navegacion.component.css'
 })
@@ -20,9 +22,18 @@ cambiomodo() {
 }
 
 menuOpen = false;
-
 abrirMenu() {
   this.menuOpen = !this.menuOpen
 }
 
-  }
+isActive = false;
+ toggleActive() { 
+  this.isActive = !this.isActive; 
+ }
+
+ ActivarFunciones() {
+  this.abrirMenu();
+  this.toggleActive();
+}
+
+}
