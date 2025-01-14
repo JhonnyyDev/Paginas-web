@@ -7,8 +7,14 @@ body {
 }
 .white {
     background-color: white;
-    color:black
+    color:rgb(255, 255, 255)
 }
+
+.white h2{
+
+    color:rgb(112, 182, 0)
+}
+
 
 h2 {
     font-size: 30px;
