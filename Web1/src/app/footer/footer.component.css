@@ -38,6 +38,19 @@ footer {
     margin-bottom: 10px;
 }
 
+.lista a { 
+    color: white; /* Color para los enlaces normales */ 
+}
+.lista a:visited { 
+    color: white; /* Color para los enlaces visitados */ 
+}
+.lista a:hover { 
+    color: rgb(246, 250, 0); /* Color para los enlaces cuando se pasa el ratón por encima */ 
+} 
+.lista a:active { 
+    color: rgb(81, 255, 0); /* Color para los enlaces activos */ 
+}
+
 /* Para el div del copyright */
 footer > div:last-child {
     background-color: black;

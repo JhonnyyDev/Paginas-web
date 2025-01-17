@@ -69,6 +69,19 @@
   padding: 8px;
 }
 
+.lista a { 
+  color: white; /* Color para los enlaces normales */ 
+}
+.lista a:visited { 
+  color: white; /* Color para los enlaces visitados */ 
+}
+.lista a:hover { 
+  color: rgb(246, 250, 0); /* Color para los enlaces cuando se pasa el ratón por encima */ 
+} 
+.lista a:active { 
+  color: rgb(81, 255, 0); /* Color para los enlaces activos */ 
+}
+
 @media (max-width: 600px) {
 
   #barraNavegacion {
